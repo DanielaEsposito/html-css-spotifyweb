@@ -6,6 +6,7 @@
 }
 img {
   width: 100%;
+  display: block;
 }
 ul > li {
   list-style: none;
@@ -60,15 +61,32 @@ i {
 }
 
 /*SIDEBAR*/
-.sidebar-up {
-  padding: 10px;
-}
+
 .logo {
   width: 30px;
+  margin:10px
+}
+li > i , p > li{
+  padding-left: 10px;
+}
+.complite{
+  width: 150px;
 }
 li {
   color: white;
-  padding: 10px 0px;
+  padding: 15px 0px;
+}
+.sidebar-bottom > p {
+  padding:10px 5px 5px 0px;
+  vertical-align: center;
+}
+p > span{
+  color: white;
+  padding: 0px 5px;
+}
+hr{
+  width: 160px;
+  margin: 5px;
 }
 
 /*FOOTER*/
@@ -80,7 +98,10 @@ li {
 
 @media screen and (min-width: 480px) {
   :root {
-    --sidebar-width: 300px;
+    --sidebar-width: 200px;
+  }
+  .sidebar {
+   align-items: initial;
   }
 }
 
@@ -96,5 +117,11 @@ li {
   }
   .d-md-inline {
     display: inline;
+  }
+  .d-md-inlineblock{
+    display:inline-block;
+  }
+  ul>li:first-child{
+    border-left:2px solid greenyellow
   }
 }
