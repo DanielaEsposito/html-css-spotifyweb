@@ -39,6 +39,14 @@ i {
   --player-height: 100px;
   --sidebar-width: 60px;
 }
+a{
+  text-decoration: none;
+  color: gray;
+}
+a:hover{
+  color: white;
+  font-weight: bold;
+}
 /* MAIN*/
 .main {
   height: calc(100vh - var(--player-height));
@@ -60,6 +68,7 @@ i {
   justify-content: space-between;
   color: white;
 }
+
 
 /*SIDEBAR*/
 
@@ -112,7 +121,18 @@ hr {
   top: 36px;
 }
 /*MAIN*/
-
+nav.nav-main{
+  justify-content: space-around;
+  color: gray;
+  flex-wrap: wrap;
+}
+.main-ul{
+  text-align: center;
+}
+.link-main{
+  padding: 0px 15px;
+  
+}
 
 /*FOOTER*/
 .player {
