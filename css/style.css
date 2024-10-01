@@ -17,7 +17,6 @@ i {
 
 /*utils*/
 .container {
- 
   margin: 0px auto;
   padding: 0px 20px;
 }
@@ -127,18 +126,20 @@ nav.nav-main {
 }
 .link-main > a {
   padding: 20px;
-  font-size: 0.8rem;}
-  
-/*RECENTLY PLAYE SECTION*/
-.main-content{
-  overflow:scroll;
+  font-size: 0.8rem;
 }
-.recently-played > .container , .created-for > .container {
+
+/*RECENTLY PLAYE SECTION*/
+.main-content {
+  overflow: scroll;
+}
+.recently-played > .container,
+.created-for > .container,
+.most-popular > .container {
   flex-wrap: wrap;
   gap: 10px;
-  
 }
-h1{
+h1 {
   color: white;
   margin: 15px;
 }
@@ -148,19 +149,22 @@ h1{
   flex-shrink: 0;
   flex-grow: 0;
 }
-.card-title > h2{
+.card-title > h2 {
   text-align: center;
   padding: 5px;
   color: white;
   font-size: 1rem;
 }
-.card-title > h3{
+.card-title > h3 {
   text-align: center;
   color: gray;
   font-size: 0.7rem;
-
 }
-
+/*MOST POPULAR*/
+.card-img.circle > img{
+  border-radius: 100%;
+  
+}
 /*FOOTER*/
 .player {
   background-color: #282828;
