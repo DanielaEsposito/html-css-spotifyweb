@@ -16,11 +16,32 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>document</title>
 </head>
-<main class="main d-flex">
-    <div class="sidebar"></div>
+<main class="main d-flex ">
+    <div class="sidebar d-flex">
+        <div class="sidebar-up">
+            <div class="logo">
+                <div class="logo-complite"></div>
+                <img src="./img/logo.svg" alt="logo" class="d-none">
+                <img src="./img/logo-small.svg" alt="logo">
+            </div>
+            <nav class="nav-sidebar">
+                <ul>
+                    <li class="link"><i class="fa-solid fa-house fa-xl"></i><span class="d-none">Home</span></li>
+                    <li class="link"><i class="fa-solid fa-magnifying-glass fa-xl"></i><span class="d-none">Cerca</span></li>
+                    <li class="link"><i class="fa-solid fa-magnifying-glass fa-xl"></i><span class="d-none">La tua libreria</span></li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="sidebar-bottom">
+            <p><i class="fa-light fa-circle-arrow-down"></i> <span class="d-none">Installa app</span></p>
+            <hr class="d-none">
+            <p><i class="fa-regular fa-user"></i><span class="d-none"></span>Daniela</p>
+        </div>
+    </div>
     <div class="main-content">
         <div class="header-main"></div>
     </div>
-    
+
 </main>
 <footer class="player"></footer>
