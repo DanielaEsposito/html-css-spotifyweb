@@ -69,7 +69,7 @@ i {
 }
 li > i,
 p > li,
-.playlist {
+.playlist ,p > span {
   padding-left: 10px;
 }
 .complite {
@@ -82,9 +82,7 @@ li {
   padding: 10px 5px 5px 0px;
   vertical-align: center;
 }
-p > span {
-  padding: 0px 5px;
-}
+ 
 hr {
   width: 160px;
   margin: 5px;
@@ -99,6 +97,23 @@ hr {
   overflow-y: scroll;
   height: 200px;
 }
+/*HEADER MANIN*/
+.header-main{
+  position: relative;
+}
+.btn-header{
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 10px 30px;
+  border-radius: 20px;
+  color: white;
+  position: absolute;
+  right: 4px;
+  top: 36px;
+}
+/*MAIN*/
+
+
 /*FOOTER*/
 .player {
   background-color: #282828;
