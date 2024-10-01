@@ -70,7 +70,10 @@ a {
   width: 30px;
   margin: 10px;
 }
-.link > i,
+nav.nav-sidebar  img , .sidebar-bottom img{
+  width: 30px;
+  margin: 0px auto;
+}
 .playlist,
 p > span {
   padding-left: 10px;
@@ -180,6 +183,10 @@ a:hover {
 @media screen and (min-width: 480px) {
   :root {
     --sidebar-width: 200px;
+  }
+  nav.nav-sidebar  img , .sidebar-bottom img{
+    margin: 0px 5px;
+    vertical-align: middle;
   }
   .sidebar {
     align-items: initial;
