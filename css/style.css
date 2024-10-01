@@ -17,8 +17,7 @@ i {
 
 /*utils*/
 .container {
-  width: 1000px;
-  max-width: 100%;
+ 
   margin: 0px auto;
   padding: 0px 20px;
 }
@@ -39,14 +38,11 @@ i {
   --player-height: 100px;
   --sidebar-width: 60px;
 }
-a{
+a {
   text-decoration: none;
   color: gray;
 }
-a:hover{
-  color: white;
-  font-weight: bold;
-}
+
 /* MAIN*/
 .main {
   height: calc(100vh - var(--player-height));
@@ -69,16 +65,15 @@ a:hover{
   color: white;
 }
 
-
 /*SIDEBAR*/
 
 .logo {
   width: 30px;
   margin: 10px;
 }
-li > i,
-p > li,
-.playlist ,p > span {
+.link > i,
+.playlist,
+p > span {
   padding-left: 10px;
 }
 .complite {
@@ -91,15 +86,15 @@ li {
   padding: 10px 5px 5px 0px;
   vertical-align: center;
 }
- 
+
 hr {
   width: 160px;
   margin: 5px;
 }
-.create-playlist{
+.create-playlist {
   margin: 10px 0px;
 }
-.title-playlist{
+.title-playlist {
   padding: 15px 0px;
 }
 .list-playlist {
@@ -107,10 +102,10 @@ hr {
   height: 200px;
 }
 /*HEADER MANIN*/
-.header-main{
+.header-main {
   position: relative;
 }
-.btn-header{
+.btn-header {
   background-color: transparent;
   border: 1px solid white;
   padding: 10px 30px;
@@ -121,17 +116,49 @@ hr {
   top: 36px;
 }
 /*MAIN*/
-nav.nav-main{
+nav.nav-main {
   justify-content: space-around;
   color: gray;
   flex-wrap: wrap;
+  padding: 20px;
 }
-.main-ul{
+.main-ul {
   text-align: center;
 }
-.link-main{
-  padding: 0px 15px;
+.link-main > a {
+  padding: 20px;
+  font-size: 0.8rem;}
   
+/*RECENTLY PLAYE SECTION*/
+.main-content{
+  overflow:scroll;
+}
+.recently-played > .container , .created-for > .container {
+  flex-wrap: wrap;
+  gap: 10px;
+  
+}
+h1{
+  color: white;
+  margin: 15px;
+}
+.card {
+  min-height: 150px;
+  flex-basis: 48%;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+.card-title > h2{
+  text-align: center;
+  padding: 5px;
+  color: white;
+  font-size: 1rem;
+}
+.card-title > h3{
+  text-align: center;
+  color: gray;
+  font-size: 0.7rem;
+
 }
 
 /*FOOTER*/
@@ -139,6 +166,11 @@ nav.nav-main{
   background-color: #282828;
   height: var(--player-height);
   width: 100%;
+}
+/*HOVER*/
+a:hover {
+  color: white;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 480px) {
