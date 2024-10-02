@@ -21,45 +21,52 @@
 <main class="main d-flex ">
     <!--SIDE BAR-->
     <div class="sidebar d-flex">
-        <div class="sidebar-up">
-            <div class="logo">
-                <div class="complite">
-                    <img src="./img/logo.svg" alt="logo" class="d-none d-md-inlineblock">
-                </div>
-
-                <img src="./img/logo-small.svg" alt="logo" class="d-md-none">
+        <!--logo-->
+        <div class="logo">
+            <div class="complite">
+                <img src="./img/logo.svg" alt="logo" class="d-none d-md-inlineblock">
             </div>
-            <nav class="nav-sidebar">
-                <ul>
-                    <li class="link"><img src="./img/home.svg" alt="home" class="d-inline"> <span
-                            class="d-none d-md-inlineblock">
-                            <a href="#">Home</a></span></li>
-                    <li class="link"><img src="./img/search.svg" alt="search" class="d-inline"><span
-                            class="d-none d-md-inlineblock"><a href="#">Cerca</a> </span></li>
-                    <li class="link"><img src="./img/libreria.svg" alt="libreria" class="d-inline"><span
-                            class="d-none d-md-inlineblock"> <a href="#">La tua libreria</a></span></li>
 
-                </ul>
-            </nav>
-            <div class="playlist d-none d-md-inlineblock">
-                <p class="title-playlist">PLAYLIST</p>
-                <div class="add-playlist">
-                    <div class="create-playlist">
-                        <i class="fa-solid fa-square-plus fa-2xl"></i> <span>Crea Playlist</span>
-                    </div>
-
-                    <ul class="list-playlist">
-                        <li class="new-playlist">Nuova playlist</li>
-                        <li class="new-playlist">Nuova playlist</li>
-                        <li class="new-playlist">Nuova playlist</li>
-                        <li class="new-playlist">Nuova playlist</li>
-                        <li class="new-playlist">Nuova playlist</li>
-                        <li class="new-playlist">Nuova playlist</li>
-                        <li class="new-playlist">Nuova playlist</li>
-                    </ul>
-                </div>
-            </div>
+            <img src="./img/logo-small.svg" alt="logo" class="d-md-none">
         </div>
+        <!--navbar-->
+        <nav class="nav-sidebar ">
+            <ul>
+                <li class="link"><img src="./img/home.svg" alt="home" class="d-inline"> <span
+                        class="d-none d-md-inlineblock">
+                        <a href="#">Home</a></span></li>
+                <li class="link"><img src="./img/search.svg" alt="search" class="d-inline"><span
+                        class="d-none d-md-inlineblock"><a href="#">Cerca</a> </span></li>
+                <li class="link"><img src="./img/libreria.svg" alt="libreria" class="d-inline"><span
+                        class="d-none d-md-inlineblock"> <a href="#">La tua libreria</a></span></li>
+
+            </ul>
+        </nav>
+
+        <!--create playlist-->
+
+        <div class="create-playlist d-none d-md-block">
+            <p class="title-playlist">PLAYLIST</p>
+            <i class="fa-solid fa-square-plus fa-2xl"></i> <span>Crea Playlist</span>
+        </div>
+        <!--new playlist-->
+        <div class="add-playlist d-none d-md-flex">
+            <ul class="list-playlist">
+                <li class="new-playlist"> <a href="#">Prima playlist</a></li>
+                <li class="new-playlist"><a href="#">Nuova playlist</a></li>
+                <li class="new-playlist"><a href="#">Nuova playlist</a></li>
+                <li class="new-playlist"><a href="#">Nuova playlist</a></li>
+                <li class="new-playlist"><a href="#">Nuova playlist</a></li>
+                <li class="new-playlist"><a href="#">Nuova playlist</a></li>
+                <li class="new-playlist"><a href="#">Nuova playlist</a></li>
+                <li class="new-playlist"><a href="#">Nuova playlist</a></li>
+                <li class="new-playlist"><a href="#">Nuova playlist</a></li>
+                <li class="new-playlist"><a href="#">Nuova playlist</a></li>
+                <li class="new-playlist"><a href="#">Nuova playlist</a></li>
+                <li class="new-playlist"> <a href="#">Ultima playlist</a></li>
+            </ul>
+        </div>
+        <!--user-->
         <div class="sidebar-bottom">
             <p class=""><img src="./img/download.svg" alt="download" class="d-inline"><span
                     class="d-none d-md-inlineblock"><a href="#">Installa app</a></span></p>
@@ -171,6 +178,7 @@
             </div>
 
         </section>
+        <!--MOST POPULAR-->
         <section class="most-popular">
             <h1>Artisti più popolari</h1>
             <h3>Più ascolti, più accurati saranno i suggerimenti</h3>
@@ -198,6 +206,7 @@
     </div>
 
 </main>
+<!--PLAYER-->
 <footer class="player d-flex">
     <div class="col left d-flex">
         <div class="music d-flex">
@@ -212,13 +221,24 @@
             <i class="fa-regular fa-folder"></i>
         </div>
     </div>
-    <div class="col center d-flex">
-        <div class="play">
-            <i class="fa-solid fa-shuffle fa-sm"></i>
-            <i class="fa-solid fa-forward-fast fa-flip-horizontal fa-sm"></i>
-            <i class="fa-regular fa-circle-play fa-lg"></i>
-            <i class="fa-solid fa-forward-fast fa-sm"></i>
-            <i class="fa-solid fa-arrow-rotate-right fa-sm"></i>
+    <div class="col center">
+        <div class="play d-flex ">
+            <div class="i-container d-flex">
+                <i class="fa-solid fa-shuffle fa-sm"></i>
+                <i class="fa-solid fa-forward-fast fa-flip-horizontal fa-sm"></i>
+                <i class="fa-regular fa-circle-play fa-lg"></i>
+                <i class="fa-solid fa-forward-fast fa-sm"></i>
+                <i class="fa-solid fa-arrow-rotate-right fa-sm"></i>
+            </div>
+
+        </div>
+
+        <div class="progress-bar-container d-flex">
+            <span class="current-time">0:32</span>
+            <div class="progress-bar">
+                <div class="progress-bar"></div>
+            </div>
+            <span class="tot-time">3:15</span>
         </div>
     </div>
     <div class="col right d-flex"></div>
