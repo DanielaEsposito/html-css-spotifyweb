@@ -70,7 +70,8 @@ a {
   width: 30px;
   margin: 10px 5px;
 }
-nav.nav-sidebar  img , .sidebar-bottom img{
+nav.nav-sidebar img,
+.sidebar-bottom img {
   width: 30px;
   margin: 0px auto;
 }
@@ -164,15 +165,54 @@ h1 {
   font-size: 0.7rem;
 }
 /*MOST POPULAR*/
-.card-img.circle > img{
+.card-img.circle > img {
   border-radius: 100%;
-  
 }
 /*FOOTER*/
 .player {
   background-color: #282828;
   height: var(--player-height);
   width: 100%;
+}
+.col {
+  flex-basis: 33%;
+  border: 1px solid black;
+}
+.col.center {
+  flex-grow: 1;
+}
+/*COL LEFT*/
+.col.left{
+  justify-content: space-between;
+}
+.music{
+  align-items:center;
+  flex-basis: 80%;
+}
+.img-sinister {
+  width: 30px;
+  margin: 10px;
+}
+.text-player > h2,
+.text-player > h3 {
+  font-size: 0.7rem;
+}
+.text-player > h2{
+  color: white;
+}
+.col-left.icons{
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 20%;
+}
+.fa-heart , .fa-folder{
+  margin: 3px 5px;
+}
+/*COL CENTER*/
+.play{
+ width: 100%;
+ text-align: center;
+  
 }
 /*HOVER*/
 a:hover {
@@ -184,7 +224,9 @@ a:hover {
   :root {
     --sidebar-width: 200px;
   }
-  nav.nav-sidebar  img , .sidebar-bottom img{
+
+  nav.nav-sidebar img,
+  .sidebar-bottom img {
     margin: 0px 5px;
     vertical-align: middle;
   }
@@ -209,6 +251,7 @@ a:hover {
   .d-md-inlineblock {
     display: inline-block;
   }
+
   .nav-sidebar > ul > li:first-child {
     border-left: 2px solid greenyellow;
   }
