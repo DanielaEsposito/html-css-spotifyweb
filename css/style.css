@@ -182,7 +182,7 @@ h1 {
 }
 .col {
   flex-basis: 33%;
-  border: 1px solid black;
+  
 }
 .col.center {
   flex-grow: 1;
@@ -239,6 +239,31 @@ margin: 0px 10px;
   height: 4px;
   background-color: gray;
   border-radius: 2px;
+  margin-top: 8px;
+}
+/*VOL BAR*/
+.vol{
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+.vol-bar-container{
+  width: 100%;
+  margin:  0px 10px;
+  align-items: center;
+  gap: 13px;
+  justify-content: flex-end;
+}
+.vol-bar-container > .vol-bar{
+  flex-grow: 1;
+  max-width:200px ;
+  min-width: 20px;
+  height: 4px;
+  background-color: gray;
+  border-radius: 2px;
+}
+.current-time , .tot-time{
+  color: white;
 }
 /*HOVER*/
 a:hover {
@@ -283,5 +308,15 @@ a:hover {
   }
   .nav-sidebar > ul > li{
     border-left: 1px solid transparent;
+  }
+  .music{
+    align-items:center;
+    flex-basis: 10%%;
+  }
+  .col-left.icons{
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-basis: 90%;
+    align-items: center;
   }
 }
