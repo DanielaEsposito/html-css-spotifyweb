@@ -67,9 +67,6 @@ body{
   color: white;
   overflow: hidden;
   gap: 10px;
- 
- 
-
 }
 .logo {
   width: 30px;
@@ -91,6 +88,9 @@ li {
 .playlist,
 p > span {
   padding-left: 8px;
+}
+.create-playlist{
+  padding: 10px 8px;
 }
 .title-playlist {
   padding-bottom: 15px;
@@ -127,6 +127,7 @@ hr {
   position: absolute;
   right: 4px;
   top: 36px;
+  margin-right: 10px;
 }
 /*MAIN*/
 nav.nav-main {
@@ -199,9 +200,14 @@ h3 {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.678);
   position: absolute;
+  
 }
 /*MOST POPULAR*/
 .card-img.circle > img {
+  border-radius: 100%;
+}
+
+.card-img.circle > .shadow{
   border-radius: 100%;
 }
 /*FOOTER*/
@@ -347,7 +353,10 @@ a:hover {
   color: white;
   font-weight: bold;
 }
-.card-img:hover .shadow , .play-icons{
+.card-img:hover .shadow{
+  display: block;
+}
+.card-img:hover .play-icons{
   display: block;
 }
 .btn-header:hover {
@@ -355,15 +364,15 @@ a:hover {
   color: lime;
   border-color: lime;
 }
-.col-left.icons:hover{
+{
   transform: scale(1.2);
   cursor: pointer;
 }
 i.fa-heart:hover{
   color: lime;
   font-weight: bolder;
-
 }
+/*MEDIA*/
 
 @media screen and (min-width: 480px) {
   :root {
