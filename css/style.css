@@ -92,6 +92,9 @@ p > span {
 .create-playlist{
   padding: 10px 8px;
 }
+.fa-square-plus{
+  color: gray;
+}
 .title-playlist {
   padding-bottom: 15px;
 }
@@ -170,6 +173,7 @@ h3 {
   flex-basis: 48%;
   flex-shrink: 1;
   flex-grow: 1;
+  cursor: pointer;
 }
 .card-title > h2 {
   text-align: center;
@@ -231,7 +235,7 @@ h3 {
   flex-basis: 80%;
 }
 .img-sinister {
-  width: 30px;
+  width: 40px;
   margin: 10px;
 }
 .text-player > h2,
@@ -364,13 +368,20 @@ a:hover {
   color: lime;
   border-color: lime;
 }
-{
-  transform: scale(1.2);
-  cursor: pointer;
-}
+
 i.fa-heart:hover{
   color: lime;
   font-weight: bolder;
+}
+i.fa-heart:active{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.creative-playlist:hover a {
+  color: white;
+}
+.creative-playlist:hover .fa-square-plus{
+  color: white;
 }
 /*MEDIA*/
 
