@@ -15,7 +15,10 @@ i {
   color: white;
 }
 
-/*utils*/
+
+/*UTILS*/
+
+
 .container {
   margin: 0px auto;
   padding: 0px 20px;
@@ -44,20 +47,14 @@ a {
 body{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-/* MAIN*/
-.main {
-  height: calc(100vh - var(--player-height));
-}
-.main-content {
-  background-color: #141922;
-  width: calc(100% - var(--sidebar-width));
-}
-.header-main {
-  background-color: #0c0f14;
-  height: var(--header-main-height);
-}
+
+
+
+
 
 /*SIDEBAR*/
+
+
 .sidebar {
   width: var(--sidebar-width);
   height: 100%;
@@ -117,7 +114,24 @@ hr {
   margin: 5px;
 }
 
+/* MAIN*/
+
+
+.main {
+  height: calc(100vh - var(--player-height));
+}
+.main-content {
+  background-color: #141922;
+  width: calc(100% - var(--sidebar-width));
+}
+.header-main {
+  background-color: #0c0f14;
+  height: var(--header-main-height);
+}
+
 /*HEADER MANIN*/
+
+
 .header-main {
   position: relative;
 }
@@ -132,7 +146,11 @@ hr {
   top: 36px;
   margin-right: 10px;
 }
-/*MAIN*/
+
+
+/* NAV MAIN*/
+
+
 nav.nav-main {
   justify-content: space-around;
   color: gray;
@@ -145,6 +163,20 @@ nav.nav-main {
 .link-main > a {
   padding: 20px;
   font-size: 0.8rem;
+}
+.link-main{
+  position: relative;
+}
+.link-main:after{
+  content: "";
+  width: 40px;
+  height: 2px;
+  background-color: lime;
+  position: absolute;
+  bottom: 0px;
+  right: 50%;
+  transform: translate(50%, -50%);
+  opacity: 0;
 }
 
 /*RECENTLY PLAYE SECTION*/
@@ -293,8 +325,8 @@ h3 {
   position: absolute;
   right: 0;
   top: 50%;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   background-color: white;
   border-radius: 50%;
   transform: translate(50%, -50%);
@@ -337,8 +369,8 @@ h3 {
   position: absolute;
   right: 0;
   top: 50%;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   background-color: white;
   border-radius: 50%;
   transform: translate(50%, -50%);
@@ -353,6 +385,9 @@ h3 {
 }
 
 /*HOVER*/
+.link-main:hover::after{
+  opacity:1;
+}
 a:hover {
   color: white;
   font-weight: bold;
@@ -368,13 +403,16 @@ a:hover {
   color: lime;
   border-color: lime;
 }
-
+.player i:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
 i.fa-heart:hover{
   color: lime;
   font-weight: bolder;
 }
 i.fa-heart:active{
-  transform: scale(1.2);
+  transform: scale(1.4);
   cursor: pointer;
 }
 .creative-playlist:hover a {
